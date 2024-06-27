@@ -29,7 +29,6 @@ function changeGreeting() {
   MODAL_LANGUAGE.innerText = modalLanguage[language];
   IMAGES_SOURCE.innerText = imagesSourceObj[language];
   VISIBLE_BLOCKS.innerText = visibleBlocks[language];
-  /*   console.log(placeholderGreeting[language]); */
 }
 
 export { changeGreeting };

@@ -22,7 +22,6 @@ async function getWeather() {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=${language}&appid=e40877c6b1237fdfde3d753747f26e05&units=metric`;
   const res = await fetch(url);
   const data = await res.json();
-  console.log(data.name);
   if (data.name === undefined) {
     alert('Check name of city');
   }

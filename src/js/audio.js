@@ -91,7 +91,6 @@ function changeTimeTrack(position) {
 
 audio.addEventListener('ended', () => {
   playNextMusic();
-  console.log('end track');
 });
 
 function toggleVolume() {

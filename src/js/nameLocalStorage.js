@@ -25,5 +25,4 @@ function getLocalStorage() {
 
 export { setLocalStorage, getLocalStorage };
 
-/* window.addEventListener('beforeunload', setLocalStorage);
-window.addEventListener('load', getLocalStorage); */
+
