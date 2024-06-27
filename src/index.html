@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/owfont-regular.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>momentum</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="player">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+
+        <div class="controls-player">
+          <div class="timeline">
+            <div class="progress"></div>
+          </div>
+
+          <div class="track-name"></div>
+
+          <div class="controls-section">
+            <div class="play-container">
+              <div class="play-button-toggle play-small"></div>
+            </div>
+
+            <div class="time-track">
+              <div class="current">0:00</div>
+              <div class="divide">/</div>
+              <div class="length">0:00</div>
+            </div>
+
+            <div class="volume-container">
+              <div class="volume-button">
+                <div class="volume-icon"></div>
+              </div>
+              <div class="volume-slider">
+                <div class="volume-percentage"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="play-list"></ul>
+      </div>
+      <div class="settings">
+        <span class="settings-icon"></span>
+      </div>
+      <div class="weather">
+        <input type="text" class="city" placeholder="Minsk" />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <div class="temperature"></div>
+          <div class="weather-description"></div>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </header>
+    <div class="modal-container">
+      <div class="modal">
+        <div class="block">
+          <h2 class="modal__visible-blocks">Visible blocks</h2>
+          <div class="button__blocks">
+            <button class="button button_active">Player</button>
+            <button class="button button_active">Weather</button>
+            <button class="button button_active">Time</button>
+            <button class="button button_active">Date</button>
+            <button class="button button_active">Greeting</button>
+            <button class="button button_active">Quote</button>
+          </div>
+        </div>
+        <div class="block">
+          <h2 class="modal__images-source">Source for images</h2>
+          <div class="images-source__buttons">
+            <button class="button button_active">GitHub</button>
+            <button class="button">Unsplash API</button>
+            <button class="button">Flickr API</button>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2 class="modal__language">Language</h2>
+          <div class="language__button_block">
+            <button class="button button_active">EN</button>
+            <button class="button">RU</button>
+          </div>
+        </div>
+
+        <div class="close-button">
+          <button class="modal_button">Close</button>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon"></button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+      <time class="time"></time>
+      <date class="date"></date>
+      <div class="greeting-container">
+        <span class="greeting"></span>
+        <input
+          type="text"
+          class="name greeting-name"
+          placeholder="[Enter name]"
+        />
+      </div>
+    </main>
+    <footer class="footer">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
